@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
     <script src="scripts/main.js" defer></script>
 </head>
 
@@ -62,19 +63,12 @@
                 Certificate</h2>
             <div class="course-type">
                 <ul>
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">CSE</a></li>
-                    <li><a href="#">WDD</a></li>
+                    <li><a href="#" data-filter="All">All</a></li>
+                    <li><a href="#" data-filter="CSE">CSE</a></li>
+                    <li><a href="#" data-filter="WDD">WDD</a></li>
                 </ul>
 
-                <div class="courses">
-                    <div class="course">CSE 110</div>
-                    <div class="course">WDD 130</div>
-                    <div class="course">CSE 111</div>
-                    <div class="course">CSE 210</div>
-                    <div class="course">WDD 131</div>
-                    <div class="course">WDD 231</div>
-                </div>
+                <div class="courses" id="courseContainer"></div>
             </div>
         </section>
 
