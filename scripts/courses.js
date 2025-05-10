@@ -92,12 +92,25 @@ function renderCourses(subject) {
         : courses.filter(course => course.subject === subject);
 
  
+    // filteredCourses.forEach(course => {
+    //     const div = document.createElement('div');
+    //     div.className = 'course';
+    //     div.textContent = `${course.subject} ${course.number}`;
+    //     courseContainer.appendChild(div);
+    // });
+
     filteredCourses.forEach(course => {
         const div = document.createElement('div');
         div.className = 'course';
         div.textContent = `${course.subject} ${course.number}`;
+    
+        if (course.completed) {
+            div.classList.add('completed');  
+        }
+    
         courseContainer.appendChild(div);
     });
+    
 }
 
  

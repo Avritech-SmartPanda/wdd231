@@ -185,3 +185,7 @@ footer p img {
 .last-modified {
     color: #fa9d1e;
 }
+.completed {
+    background: #009899;
+
+}
